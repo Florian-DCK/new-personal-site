@@ -2,6 +2,10 @@
 {
     "HomePage": {
         "title" : "Building bridges between<br>ideas and screens.",
-        "about" : "Go to the about page"
+        "subtitle" : "I am a trainee web developer, currently in a work-study program.",
+        "about" : "Go to the about page",
+        "location" : "NIVELLES, BELGIUM",
+        "buttonContact" : "Contact me",
+        "downloadCV" : "Download my résumé"
     }
 }

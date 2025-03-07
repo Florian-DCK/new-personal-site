@@ -17,28 +17,24 @@ export default function HomePage() {
 			<Navbar></Navbar>
 			<section className="Home h-screen w-screen flex justify-center items-center">
 				<div className="flex-col text-center">
-					{/* Todo : localisation */}
-					<h3 className="text-center font-main mb-3">BASÉ EN BELGIQUE</h3>
+					<h3 className="text-center font-main mb-3">{t('location')}</h3>
 					<h1
 						className="font-main font-bold text-7xl text-center first-line:text-ownAccent"
 						dangerouslySetInnerHTML={{ __html: t.raw('title') }}
 					/>
-					{/* Todo : localisation */}
 					<p className="font-main text-stone-200/70">
-						Je suis un stagiaire développeur web, actuellement en alternance
+						{t('subtitle')}	
 					</p>
 					<div className="flex items-center justify-center mt-5 space-x-5">
-						{/* Todo : localisation */}
 						<Link
 							className={`${buttonVariants({ variant: 'outline' })} bg-transparent transition-all text-white font-main hover:text-black hover:bg-white`}
 							href={'#contact'}>
-							Me contacter
+							{t('buttonContact')}
 						</Link>
-						{/* Todo : localisation + download CV */}
 						<a href="" className='hover:opacity-50 transition-all'>
 							<div className="flex space-x-2 text-ownAccent">
 								<i data-lucide="download"></i>
-								<p className='text-white'>Télécharger mon CV</p>
+								<p className='text-white'>{t('downloadCV')}</p>
 							</div>
 						</a>
 					</div>
