@@ -31,7 +31,7 @@ export default function HomePage() {
 							href={'#contact'}>
 							{t('buttonContact')}
 						</Link>
-						<a href="" className='hover:opacity-50 transition-all'>
+						<a href="/CV_DONCKERS_FLORIAN_en.pdf" download className='hover:opacity-50 transition-all'>
 							<div className="flex space-x-2 text-ownAccent">
 								<i data-lucide="download"></i>
 								<p className='text-white'>{t('downloadCV')}</p>
