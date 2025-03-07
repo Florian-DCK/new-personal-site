@@ -1,15 +1,40 @@
-@import "tailwindcss";
-
-@plugin "tailwindcss-animate";
-
-@custom-variant dark (&:is(.dark *));
+@import 'tailwindcss';
+@tailwind utilities;
+@theme {
+	--color-background: var(--background);
+	--font-main: var(--font-raleway);
+	--color-accent: var(--accent);
+}
 
 :root {
-  --background: #18171f;
-  --foreground: #fff;
+	--background: #18171f;
+	--foreground: #fff;
+	--accent: #ff7070;
+}
+
+.Home {
+	background: fixed linear-gradient(transparent 60%, var(--background) 100%),
+		fixed linear-gradient(to right, transparent 60%, var(--background) 100%),
+		fixed linear-gradient(to left, transparent 60%, var(--background) 100%),
+		fixed linear-gradient(to top, transparent 60%, var(--background) 100%),
+		fixed
+			repeating-linear-gradient(
+				#222125,
+				#222125 1px,
+				transparent 1px,
+				transparent 40px
+			),
+		fixed
+			repeating-linear-gradient(
+				to right,
+				#222125,
+				#222125 1px,
+				transparent 1px,
+				transparent 40px
+			);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+	background-color: var(--background);
+	color: var(--foreground);
 }
