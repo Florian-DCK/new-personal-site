@@ -4,6 +4,7 @@ import { buttonVariants } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 import { createIcons, icons } from 'lucide';
 import { useEffect } from 'react';
+import Navbar from '@/components/navbar'
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
@@ -13,12 +14,13 @@ export default function HomePage() {
 
 	return (
 		<div>
+			<Navbar></Navbar>
 			<section className="Home h-screen w-screen flex justify-center items-center">
 				<div className="flex-col text-center">
 					{/* Todo : localisation */}
 					<h3 className="text-center font-main mb-3">BASÉ EN BELGIQUE</h3>
 					<h1
-						className="font-main font-bold text-7xl text-center first-line:text-accent"
+						className="font-main font-bold text-7xl text-center first-line:text-ownAccent"
 						dangerouslySetInnerHTML={{ __html: t.raw('title') }}
 					/>
 					{/* Todo : localisation */}
@@ -28,13 +30,13 @@ export default function HomePage() {
 					<div className="flex items-center justify-center mt-5 space-x-5">
 						{/* Todo : localisation */}
 						<Link
-							className={`${buttonVariants({ variant: 'outline' })} hover:bg-transparent hover:border-accent transition-all`}
+							className={`${buttonVariants({ variant: 'outline' })} bg-transparent transition-all text-white font-main hover:text-black hover:bg-white`}
 							href={'#contact'}>
 							Me contacter
 						</Link>
 						{/* Todo : localisation + download CV */}
 						<a href="" className='hover:opacity-50 transition-all'>
-							<div className="flex space-x-2 text-accent">
+							<div className="flex space-x-2 text-ownAccent">
 								<i data-lucide="download"></i>
 								<p className='text-white'>Télécharger mon CV</p>
 							</div>
