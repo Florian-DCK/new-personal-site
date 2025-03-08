@@ -28,7 +28,7 @@ export default function Navbar(){
     }
     
     return(
-        <div className="w-screen h-10 glass border-b border-stone-200/20 fixed flex items-center px-4 justify-between">
+        <div className="w-screen h-10 fixed flex items-center px-4 justify-between">
             <div className="flex-1">
                 {/* Logo ou titre */}
             </div>

@@ -6,6 +6,7 @@ import { createIcons, icons } from 'lucide';
 import { useEffect } from 'react';
 import Navbar from '@/components/navbar';
 import Stack from '@/components/stack';
+import Projects from '@/components/projects';
 
 
 export default function HomePage() {
@@ -45,8 +46,9 @@ export default function HomePage() {
 					</div>
 				</div>
 			</section>
-			<section className="h-screen w-screen">
+			<section className="h-screen w-screen px-40 py-20 space-y-15">
 				<Stack></Stack>
+				<Projects></Projects>
 			</section>
 		</div>
 	);

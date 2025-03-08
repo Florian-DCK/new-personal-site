@@ -14,6 +14,9 @@
         "git" : "Control version system",
         "php" : "Dynamic server-side scripting language.",
         "javascript" : "Interactive web programming language.",
-        "mysql" : "Database"
+        "mysql" : "Database",
+
+        "projectsTitle" : "My projects",
+        "projectsDescription" : "Here is some projects I made during my journey"
     }
 }

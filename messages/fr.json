@@ -14,6 +14,9 @@
         "git" : "Système de contrôle de version.",
         "php" : "Langage de script serveur dynamique.",
         "javascript" : "Langage de programmation web interactif.",
-        "mysql" : "Base de données."
+        "mysql" : "Base de données.",
+
+        "projectsTitle" : "Mes projets",
+        "projectsDescription" : "Voici les projets que j'ai réalisé au cours de mon parcours"
     }
 }
