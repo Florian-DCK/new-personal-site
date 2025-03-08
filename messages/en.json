@@ -6,6 +6,14 @@
         "about" : "Go to the about page",
         "location" : "NIVELLES, BELGIUM",
         "buttonContact" : "Contact me",
-        "downloadCV" : "Download my résumé"
+        "downloadCV" : "Download my résumé",
+        "stackTitle" : "My Stack",
+        "stackDescription" : "Still learning, I opted for a stack I’m comfortable with, but I remain open to all opportunities to learn new technologies.",
+        "next" : "React Framework for web applications",
+        "tailwind" : "Utility CSS framework, fast, customizable.",
+        "git" : "Control version system",
+        "php" : "Dynamic server-side scripting language.",
+        "javascript" : "Interactive web programming language.",
+        "mysql" : "Database"
     }
 }

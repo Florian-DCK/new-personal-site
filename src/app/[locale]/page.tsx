@@ -54,11 +54,10 @@ export default function HomePage() {
 			<section className="h-screen w-screen">
 				<main className=" py-20 px-40">
 					<div>
-						<h1 className="font-main font-bold text-4xl">Ma Stack</h1>
+						<h1 className="font-main font-bold text-4xl">{t('stackTitle')}</h1>
 						<p className="font-main text-stone-200/70 w-1/2 mb-10">
-							Toujours en apprentissage, j'ai opté pour une stack avec laquelle
-							je suis à l'aise, mais je reste ouvert à toutes opportunitées
-							d'apprendre de nouvelles technologies.
+							{t('stackDescription')}
+							
 						</p>
 					</div>
 					<div className="flex space-x-5 flex-wrap space-y-3">
@@ -101,7 +100,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>Next.js</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Framework React pour applications web.
+									{t('next')}
 								</CardContent>
 							</div>
 						</Card>
@@ -116,7 +115,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>Tailwind CSS</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Framework CSS utilitaire, rapide, personnalisable.
+									{t('tailwind')}
 								</CardContent>
 							</div>
 						</Card>
@@ -131,7 +130,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>Git</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Système de contrôle de version.
+									{t('git')}
 								</CardContent>
 							</div>
 						</Card>
@@ -175,7 +174,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>PHP</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Langage de script serveur dynamique.
+									{t('php')}
 								</CardContent>
 							</div>
 						</Card>
@@ -193,7 +192,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>JavaScript</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Langage de programmation web interactif.
+									{t('javascript')}
 								</CardContent>
 							</div>
 						</Card>
@@ -208,7 +207,7 @@ export default function HomePage() {
 							<div>
 								<CardTitle>MySQL</CardTitle>
 								<CardContent className="p-0 text-stone-200/50">
-									Base de données.
+									{t('mysql')}
 								</CardContent>
 							</div>
 						</Card>

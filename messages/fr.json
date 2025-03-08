@@ -6,6 +6,14 @@
         "about" : "Aller à la page à propos",
         "location" : "NIVELLES, BELGIQUE",
         "buttonContact" : "Contacter moi",
-        "downloadCV" : "Télécharger mon CV"
+        "downloadCV" : "Télécharger mon CV",
+        "stackTitle" : "Ma Stack",
+        "stackDescription" : "Toujours en apprentissage, j'ai opté pour une stack avec laquelle je suis à l'aise, mais je reste ouvert à toutes opportunitées d'apprendre de nouvelles technologies.",
+        "next" : "Framework React pour applications web.",
+        "tailwind" : "Framework CSS utilitaire, rapide, personnalisable.",
+        "git" : "Système de contrôle de version.",
+        "php" : "Langage de script serveur dynamique.",
+        "javascript" : "Langage de programmation web interactif.",
+        "mysql" : "Base de données."
     }
 }
