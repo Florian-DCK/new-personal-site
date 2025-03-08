@@ -49,34 +49,33 @@
 }
 
 .Home {
-	background: fixed linear-gradient(transparent 60%, var(--ownBackground) 100%),
-		fixed linear-gradient(to right, transparent 60%, var(--ownBackground) 100%),
-		fixed linear-gradient(to left, transparent 60%, var(--ownBackground) 100%),
-		fixed linear-gradient(to top, transparent 60%, var(--ownBackground) 100%),
-		fixed
-			repeating-linear-gradient(
-				#222125,
-				#222125 1px,
-				transparent 1px,
-				transparent 40px
-			),
-		fixed
-			repeating-linear-gradient(
-				to right,
-				#222125,
-				#222125 1px,
-				transparent 1px,
-				transparent 40px
-			);
+	background:  
+		linear-gradient(transparent 60%, var(--ownBackground) 100%),
+		linear-gradient(to right, transparent 60%, var(--ownBackground) 100%),
+		linear-gradient(to left, transparent 60%, var(--ownBackground) 100%),
+		linear-gradient(to top, transparent 60%, var(--ownBackground) 100%),
+		repeating-linear-gradient(
+			#222125,
+			#222125 1px,
+			transparent 1px,
+			transparent 40px
+		),
+		repeating-linear-gradient(
+			to right,
+			#222125,
+			#222125 1px,
+			transparent 1px,
+			transparent 40px
+		);
 }
 
 body {
 	background-color: var(--ownBackground);
-	color: var(--ownForeground)
+	color: var(--ownForeground);
 }
 
 .glass {
-	background: rgba(47, 46, 53, 0.20);
+	background: rgba(47, 46, 53, 0.2);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(10px);
 }
@@ -156,10 +155,10 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+	* {
+		@apply border-border outline-ring/50;
 	}
-  body {
-    @apply bg-background text-foreground;
+	body {
+		@apply bg-background text-foreground;
 	}
 }
