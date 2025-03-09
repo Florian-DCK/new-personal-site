@@ -28,20 +28,20 @@ export default function Navbar(){
     }
     
     return(
-        <div className="w-screen h-10 fixed flex items-center px-4 justify-between">
+        <div className="w-screen h-10 fixed flex items-center px-4 justify-between z-10">
             <div className="flex-1">
                 {/* Logo ou titre */}
             </div>
             
-            <div className="flex items-center gap-2">
-                <Label htmlFor="language-switch" className="text-sm font-medium">
+            <div className="flex items-center gap-2 cursor-pointer">
+                <Label htmlFor="language-switch" className="text-sm font-medium cursor-pointer">
                     {isEnglish ? 'EN' : 'FR'}
                 </Label>
                 <Switch 
                     id="language-switch"
                     checked={isEnglish}
                     onCheckedChange={toggleLanguage}
-                    className=""
+                    className=" cursor-pointer"
                 />
             </div>
         </div>

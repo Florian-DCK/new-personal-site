@@ -19,11 +19,11 @@ export default function HomePage() {
 		<div>
 			<Navbar></Navbar>
 			<section className="Home h-screen w-screen flex justify-center items-center">
-					<FluidSimulation></FluidSimulation>
+				<FluidSimulation></FluidSimulation>
 				<div className="flex-col text-center">
-					<h3 className="text-center font-main mb-3">{t('location')}</h3>
+					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
 					<h1
-						className="font-main font-bold text-7xl text-center first-line:text-ownAccent"
+						className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10"
 						dangerouslySetInnerHTML={{ __html: t.raw('title') }}
 					/>
 					<p className="font-main text-stone-200/70">{t('subtitle')}</p>
@@ -48,11 +48,10 @@ export default function HomePage() {
 				</div>
 			</section>
 			<section className="h-screen w-screen ps-40 pe-10 py-20 justify-between flex">
-				<div className='space-y-15'>
+				<div className="space-y-15">
 					<Stack></Stack>
 					<Projects></Projects>
 				</div>
-
 			</section>
 		</div>
 	);

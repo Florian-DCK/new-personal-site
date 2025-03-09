@@ -23,6 +23,11 @@ export default function FluidSimulation() {
         // Créer une instance de SPHSimulation avec le canvas
         const sim = new SPHSimulation();
         sim.canvas = canvas; // Passer le canvas à la simulation
+        
+        // Initialiser la simulation après avoir défini le canvas
+        sim.instantiateParticles();
+        sim.fluidHashGrid.initialize(sim.particles);
+        
         setSimulation(sim);
         
         // Fonction d'animation
@@ -65,8 +70,8 @@ export default function FluidSimulation() {
                             if (x >= 1 && x < canvas.width - 1 && y >= 1 && y < canvas.height - 1) {
                                 const index = (y * canvas.width + x) * 4;
                                 data[index] = 255;     // R
-                                data[index + 1] = 112; // G
-                                data[index + 2] = 112; // B
+                                data[index + 1] = 225; // G
+                                data[index + 2] = 225; // B
                                 data[index + 3] = 255; // A
                             }
                         }
@@ -86,38 +91,12 @@ export default function FluidSimulation() {
         // Démarrer l'animation
         animationFrameRef.current = requestAnimationFrame(animate);
         
-        // Ajouter des gestionnaires d'événements pour la souris
-        const handleMouseDown = (e: MouseEvent) => {
-            if (e.button === 0) {
-                sim.leftMouseDown = true;
-            } else if (e.button === 2) {
-                sim.rightMouseDown = true;
-            }
-            const rect = canvas.getBoundingClientRect();
-            sim.mousePosition = new Vector2(
-                e.clientX - rect.left,
-                e.clientY - rect.top
-            );
-        };
-        
-        const handleMouseUp = (e: MouseEvent) => {
-            if (e.button === 0) {
-                sim.leftMouseDown = false;
-            } else if (e.button === 2) {
-                sim.rightMouseDown = false;
-            }
-        };
-        
         const handleMouseMove = (e: MouseEvent) => {
             const rect = canvas.getBoundingClientRect();
-            sim.mousePosition = new Vector2(
-                e.clientX - rect.left,
-                e.clientY - rect.top
-            );
-            
-            // Vérifier si la souris est dans les limites du canvas
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
+            
+            sim.mousePosition = new Vector2(x, y);
             
             // Mise à jour du flag pour indiquer si la souris est dans le canvas
             sim.mouseInCanvas = (
@@ -137,27 +116,33 @@ export default function FluidSimulation() {
         };
         
         const handleContextMenu = (e: MouseEvent) => {
-            e.preventDefault(); // Empêcher le menu contextuel
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            // Empêcher le menu contextuel seulement si la souris est sur le canvas
+            if (x >= 0 && x < canvas.width && y >= 0 && y < canvas.height) {
+                e.preventDefault();
+            }
         };
         
+        // Utiliser document pour les événements de souris
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('contextmenu', handleContextMenu);
+        
+        // En plus nous gardons les événements sur le canvas
         canvas.addEventListener('mouseenter', handleMouseEnter);
         canvas.addEventListener('mouseleave', handleMouseLeave);
-        canvas.addEventListener('mousedown', handleMouseDown);
-        canvas.addEventListener('mouseup', handleMouseUp);
-        canvas.addEventListener('mousemove', handleMouseMove);
-        canvas.addEventListener('contextmenu', handleContextMenu);
         
         // Nettoyage
         return () => {
             if (animationFrameRef.current) {
                 cancelAnimationFrame(animationFrameRef.current);
             }
+            document.removeEventListener('mousemove', handleMouseMove);
+            document.removeEventListener('contextmenu', handleContextMenu);
             canvas.removeEventListener('mouseenter', handleMouseEnter);
             canvas.removeEventListener('mouseleave', handleMouseLeave);
-            canvas.removeEventListener('mousedown', handleMouseDown);
-            canvas.removeEventListener('mouseup', handleMouseUp);
-            canvas.removeEventListener('mousemove', handleMouseMove);
-            canvas.removeEventListener('contextmenu', handleContextMenu);
         };
     }, []);
 
@@ -165,7 +150,7 @@ export default function FluidSimulation() {
         <canvas 
             ref={canvasRef} 
             id="fluidCanvas" 
-            className="border-2  fluid  h-1/2 w-1/2 absolute"
+            className="fluid w-full h-full -z-10 absolute pointer-events-auto"
         >
         </canvas>
     );
