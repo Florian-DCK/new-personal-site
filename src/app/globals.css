@@ -48,6 +48,12 @@
 	--sidebar-ring: oklch(0.708 0 0);
 }
 
+.fluid {
+	border-image: linear-gradient(transparent 0%, var(--ownAccent) 100%) 1;
+	border-width: 2px;
+	border-style: solid;
+}
+
 .Home {
 	background:  
 		linear-gradient(transparent 60%, var(--ownBackground) 100%),
