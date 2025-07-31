@@ -48,6 +48,37 @@
 	--sidebar-ring: oklch(0.708 0 0);
 }
 
+.fluid {
+	border-image: linear-gradient(transparent 0%, var(--ownAccent) 100%) 1;
+	border-width: 2px;
+	border-style: solid;
+}
+
+.bridge::before {
+	content: "";
+	background: var(--ownAccent);
+	width: 400px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	left: -420px;
+	top: 50%;
+	border-radius: 5px;
+	/* border: 4px solid red; */
+}
+
+.bridge::after {
+	content: "";
+	background: var(--ownAccent);
+	width: 400px;
+	height: 10px;
+	display: block;
+	position: absolute;
+	right: -420px;
+	top: 50%;
+	border-radius: 5px;
+	/* border: 4px solid red; */
+}
 .Home {
 	background:  
 		linear-gradient(transparent 60%, var(--ownBackground) 100%),
