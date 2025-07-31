@@ -17,6 +17,8 @@
         "mysql" : "Database",
 
         "projectsTitle" : "My projects",
-        "projectsDescription" : "Here is some projects I made during my journey"
+        "projectsDescription" : "Here is some projects I made during my journey",
+
+        "scrollDown" : "Scroll down"
     }
 }

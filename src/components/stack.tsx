@@ -25,7 +25,7 @@ export default function Stack() {
 					</p>
 				</div>
 			<div className="grid grid-cols-3 gap-3 w-fit group">
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-white/70 transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className=" cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-white/70 transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-white/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12 shrink-0">
 							<circle cx="64" cy="64" r="64"></circle>
@@ -66,7 +66,7 @@ export default function Stack() {
 						</CardContent>
 					</div>
 				</Card>
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#38bdf8] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className="cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#38bdf8] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-[#38bdf8]/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12">
 							<path
@@ -81,7 +81,7 @@ export default function Stack() {
 						</CardContent>
 					</div>
 				</Card>
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#f34f29] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className="cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#f34f29] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-[#f34f29]/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12">
 							<path
@@ -96,7 +96,7 @@ export default function Stack() {
 						</CardContent>
 					</div>
 				</Card>
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#777bb3] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className="cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#777bb3] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-[#777bb3]/40 w-fit p-3 rounded-2xl">
 						<svg viewBox="0 0 128 128" className="size-12">
 							<path
@@ -140,7 +140,7 @@ export default function Stack() {
 						</CardContent>
 					</div>
 				</Card>
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#f0db4f] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className="cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#f0db4f] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-[#f0db4f]/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12">
 							<path
@@ -158,7 +158,7 @@ export default function Stack() {
 						</CardContent>
 					</div>
 				</Card>
-				<Card className="dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#00618a] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
+				<Card className="cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-[#00618a] transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-[#00618a]/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12">
 							<path

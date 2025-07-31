@@ -17,6 +17,8 @@
         "mysql" : "Base de données.",
 
         "projectsTitle" : "Mes projets",
-        "projectsDescription" : "Voici les projets que j'ai réalisé au cours de mon parcours"
+        "projectsDescription" : "Voici les projets que j'ai réalisé au cours de mon parcours",
+
+        "scrollDown" : "Faites défiler vers le bas"
     }
 }

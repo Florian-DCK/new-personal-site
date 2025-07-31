@@ -44,6 +44,10 @@ export default function HomePage() {
 							</div>
 						</a>
 					</div>
+					<div className='absolute bottom-10 left-1/2 -translate-x-1/2 text-ownAccent animate-bounce flex flex-col items-center space-y-2'>
+						<p className="text-white font-main">{t('scrollDown')}</p>
+						<i data-lucide="arrow-down"></i>
+					</div>
 				</div>
 			</section>
 			<section className="h-screen w-screen px-40 py-20 space-y-15">
