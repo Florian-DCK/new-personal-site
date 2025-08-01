@@ -1,6 +1,9 @@
 {
 	"HomePage": {
-		"title": "Construire des ponts<br>entre idées et écrans.",
+		"title": "Construire des {bridge}<br>entre {ideas} et {screens}.",
+		"titleBridge": "ponts",
+		"titleIdeas": "idées",
+		"titleScreens": "écrans",
 		"subtitle": "Je suis un stagiaire développeur web, actuellement en alternance.",
 		"about": "Aller à la page à propos",
 		"location": "NIVELLES, BELGIQUE",

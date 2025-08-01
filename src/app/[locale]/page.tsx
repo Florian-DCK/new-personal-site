@@ -15,6 +15,27 @@ export default function HomePage() {
 		createIcons({ icons });
 	}, []);
 
+	const animatedTitle = t
+		.raw('title')
+		.replace(
+			'{bridge}',
+			`<span class="text-ownAccent hover-bridge inline-block transition-all duration-300">${t(
+				'titleBridge'
+			)}</span>`
+		)
+		.replace(
+			'{ideas}',
+			`<span class="text-white hover-ideas inline-block transition-all duration-300">${t(
+				'titleIdeas'
+			)}</span>`
+		)
+		.replace(
+			'{screens}',
+			`<span class="text-white hover-screens inline-block transition-all duration-300">${t(
+				'titleScreens'
+			)}</span>`
+		);
+
 	return (
 		<div>
 			<Navbar></Navbar>
@@ -22,10 +43,12 @@ export default function HomePage() {
 				<FluidSimulation></FluidSimulation>
 				<div className="flex-col text-center">
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
-					<h1
-						className=" font-main font-bold text-7xl text-center first-line:text-ownAccent z-10"
-						dangerouslySetInnerHTML={{ __html: t.raw('title') }}
-					/>
+					<div>
+						<h1
+							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
+							dangerouslySetInnerHTML={{ __html: animatedTitle }}
+						/>
+					</div>
 					<p className="font-main text-stone-200/70">{t('subtitle')}</p>
 					<div className="flex items-center justify-center mt-5 space-x-5">
 						<Link
