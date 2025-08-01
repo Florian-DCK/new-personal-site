@@ -10,18 +10,19 @@ import { useRef } from 'react';
 export default function Projects() {
 	const t = useTranslations('HomePage');
 	return (
-		<main>
+		<main className="relative h-fit max-h-80">
 			<div>
 				<h1 className="font-main font-bold text-4xl">{t('projectsTitle')}</h1>
 				<p className="font-main text-stone-200/70 w-1/2 mb-10">
 					{t('projectsDescription')}
 				</p>
-				<div>
+				<div className="relative ">
+					<div className="absolute top-1/2 -left-0.5 -translate-y-1/2 h-[calc(100%+1rem)] border border-stone-200/20 z-50"></div>
 					<ScrollArea
-						className="dark w-full flex-nowrap pb-3 transition-all "
+						className="dark w-full flex-nowrap transition-all "
 						orientation="horizontal">
 						<div className="flex space-x-10 group">
-							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
+							<Card className="ms-3 dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										The StoryTeller
@@ -108,7 +109,7 @@ export default function Projects() {
 									</BadgeTilt>
 								</div>
 							</Card>
-							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
+							<Card className="dark me-3 p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										Adopte un Cube
@@ -147,9 +148,8 @@ export default function Projects() {
 								</div>
 							</Card>
 						</div>
-
-						<ScrollBar orientation="horizontal"></ScrollBar>
 					</ScrollArea>
+					<div className="absolute top-1/2 -right-0.5 -translate-y-1/2 h-[calc(100%+1rem)] border border-stone-200/20 z-50"></div>
 				</div>
 			</div>
 		</main>

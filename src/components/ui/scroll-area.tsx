@@ -50,7 +50,7 @@ function ScrollArea({
 				const newPos = Math.max(0, Math.min(scrollWidth, currPos + delta));
 
 				viewport.scrollLeft = newPos;
-			} else if (timeSinceLastScroll < 250) {
+			} else if (timeSinceLastScroll < 500) {
 				e.preventDefault();
 				e.stopPropagation();
 			}
@@ -104,7 +104,7 @@ function ScrollBar({
 			{...props}>
 			<ScrollAreaPrimitive.ScrollAreaThumb
 				data-slot="scroll-area-thumb"
-				className="bg-ownAccent relative flex-1 rounded-full"
+				className="bg-ownAccent/0 relative flex-1 rounded-full"
 			/>
 		</ScrollAreaPrimitive.ScrollAreaScrollbar>
 	);
