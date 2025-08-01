@@ -31,51 +31,51 @@ export default function Navbar() {
 			<button
 				className="font-main font-bold text-3xl text-ownAccent text-center z-10"
 				onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					F
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					l
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					o
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					r
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					i
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					a
 				</span>
-				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-300 ease-in-out cursor-default">
+				<span className="inline-block hover:scale-110 hover:-translate-y-1 transition-transform duration-100 ease-in-out cursor-default">
 					n
 				</span>
 				<span className="text-white">
 					{' '}
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						D
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						o
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						n
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						c
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						k
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						e
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						r
 					</span>
-					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-500 ease-in-out cursor-default">
+					<span className="inline-block hover:rotate-12 hover:text-ownAccent transition-all duration-100 ease-in-out cursor-default">
 						s
 					</span>
 				</span>

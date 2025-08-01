@@ -23,7 +23,7 @@ export default function HomePage() {
 				<div className="flex-col text-center">
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
 					<h1
-						className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10"
+						className=" font-main font-bold text-7xl text-center first-line:text-ownAccent z-10"
 						dangerouslySetInnerHTML={{ __html: t.raw('title') }}
 					/>
 					<p className="font-main text-stone-200/70">{t('subtitle')}</p>
