@@ -20,8 +20,8 @@ export default function Projects() {
 					<ScrollArea
 						className="dark w-full flex-nowrap pb-3 transition-all "
 						orientation="horizontal">
-						<div className="flex space-x-10">
-							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 ">
+						<div className="flex space-x-10 group">
+							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										The StoryTeller
@@ -65,7 +65,7 @@ export default function Projects() {
 								</div>
 							</Card>
 
-							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 ">
+							<Card className="dark p-3 w-162 h-full glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										Dreams
@@ -108,7 +108,7 @@ export default function Projects() {
 									</BadgeTilt>
 								</div>
 							</Card>
-							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 ">
+							<Card className="dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										Adopte un Cube

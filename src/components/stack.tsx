@@ -18,12 +18,12 @@ export default function Stack() {
 
 	return (
 		<main className=" w-fit">
-				<div>
-					<h1 className="font-main font-bold text-4xl">{t('stackTitle')}</h1>
-					<p className="font-main text-stone-200/70 w-1/2 mb-10">
-						{t('stackDescription')}
-					</p>
-				</div>
+			<div>
+				<h1 className="font-main font-bold text-4xl">{t('stackTitle')}</h1>
+				<p className="font-main text-stone-200/70 w-1/2 mb-10">
+					{t('stackDescription')}
+				</p>
+			</div>
 			<div className="grid grid-cols-3 gap-3 w-fit group">
 				<Card className=" cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-white/70 transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-white/40 w-fit h-fit p-3 rounded-2xl aspect-square">
