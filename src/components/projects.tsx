@@ -32,14 +32,12 @@ export default function Projects() {
 										})} bg-transparent border border-stone-200/30 transition-all text-white font-main hover:text-black hover:bg-white`}
 										href={'https://www.adopteuncube.com/'}
 										target="_blank">
-										Visiter
+										{t('projectsVisit')}
 									</Link>
 								</CardHeader>
 								<CardContent className="ps-2 pe-0 flex space-x-2">
 									<p className="text-stone-200/70 font-main">
-										Réseau social d'écriture d'histoires collaboratives, inspiré
-										du jeu "cadavre exquis". Réalisé en tant que projet de fin
-										d'année.
+										{t('projectsDescriptionStoryTeller')}
 									</p>
 									<Image
 										src="/STORYTELLER_Mockup.png"
@@ -78,13 +76,12 @@ export default function Projects() {
 										})} bg-transparent border border-stone-200/30 transition-all text-white font-main hover:text-black hover:bg-white`}
 										href={'https://www.adopteuncube.com/'}
 										target="_blank">
-										Visiter
+										{t('projectsVisit')}
 									</Link>
 								</CardHeader>
 								<CardContent className="ps-2 pe-0 flex space-x-2">
 									<p className="text-stone-200/70 font-main">
-										Application Web pour suivre ses lectures et les noter, avec
-										l'utilisation de l'api google books.
+										{t('projectsDescriptionDreams')}
 									</p>
 									<Image
 										src="/DREAMS_Mockup.png"
@@ -127,10 +124,7 @@ export default function Projects() {
 								</CardHeader>
 								<CardContent className="ps-2 pe-0 flex space-x-2">
 									<p className="text-stone-200/70 font-main">
-										Site vitrine conçu et développé pour une communauté de
-										joueurs, principalement axée sur Minecraft. J'ai pris en
-										charge l'intégralité du design et de la mise en œuvre
-										technique.
+										{t('projectsDescriptionAdopteUnCube')}
 									</p>
 									<Image
 										src="/AUC_Mockup.png"

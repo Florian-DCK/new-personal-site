@@ -1,24 +1,27 @@
-
 {
-    "HomePage": {
-        "title" : "Building bridges between<br>ideas and screens.",
-        "subtitle" : "I am a trainee web developer, currently in a work-study program.",
-        "about" : "Go to the about page",
-        "location" : "NIVELLES, BELGIUM",
-        "buttonContact" : "Contact me",
-        "downloadCV" : "Download my résumé",
-        "stackTitle" : "My Stack",
-        "stackDescription" : "Still learning, I opted for a stack I’m comfortable with, but I remain open to all opportunities to learn new technologies.",
-        "next" : "React Framework for web applications",
-        "tailwind" : "Utility CSS framework, fast, customizable.",
-        "git" : "Control version system",
-        "php" : "Dynamic server-side scripting language.",
-        "javascript" : "Interactive web programming language.",
-        "mysql" : "Database",
+	"HomePage": {
+		"title": "Building bridges between<br>ideas and screens.",
+		"subtitle": "I am a trainee web developer, currently in a work-study program.",
+		"about": "Go to the about page",
+		"location": "NIVELLES, BELGIUM",
+		"buttonContact": "Contact me",
+		"downloadCV": "Download my résumé",
+		"stackTitle": "My Stack",
+		"stackDescription": "Still learning, I opted for a stack I’m comfortable with, but I remain open to all opportunities to learn new technologies.",
+		"next": "React Framework for web applications",
+		"tailwind": "Utility CSS framework, fast, customizable.",
+		"git": "Control version system",
+		"php": "Dynamic server-side scripting language.",
+		"javascript": "Interactive web programming language.",
+		"mysql": "Database",
 
-        "projectsTitle" : "My projects",
-        "projectsDescription" : "Here is some projects I made during my journey",
+		"projectsTitle": "My projects",
+		"projectsDescription": "Here is some projects I made during my journey",
+		"projectsVisit": "Visit",
+		"projectsDescriptionStoryTeller": "Collaborative literary creation platform based on the concept of \"cadavre exquis\". This application allows users to participate in the writing of collective stories, developed as part of an academic end-of-studies project.",
+		"projectsDescriptionDreams": "Web application to track and rate your readings, using the Google Books API.",
+		"projectsDescriptionAdopteUnCube": "Showcase site designed and developed for a community of players, mainly focused on Minecraft. I took charge of the entire design and technical implementation.",
 
-        "scrollDown" : "Scroll down"
-    }
+		"scrollDown": "Scroll down"
+	}
 }

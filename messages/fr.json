@@ -1,24 +1,27 @@
-
 {
-    "HomePage": {
-        "title" : "Construire des ponts<br>entre idées et écrans.",
-        "subtitle" : "Je suis un stagiaire développeur web, actuellement en alternance.",
-        "about" : "Aller à la page à propos",
-        "location" : "NIVELLES, BELGIQUE",
-        "buttonContact" : "Contacter moi",
-        "downloadCV" : "Télécharger mon CV",
-        "stackTitle" : "Ma Stack",
-        "stackDescription" : "Toujours en apprentissage, j'ai opté pour une stack avec laquelle je suis à l'aise, mais je reste ouvert à toutes opportunitées d'apprendre de nouvelles technologies.",
-        "next" : "Framework React pour applications web.",
-        "tailwind" : "Framework CSS utilitaire, rapide, personnalisable.",
-        "git" : "Système de contrôle de version.",
-        "php" : "Langage de script serveur dynamique.",
-        "javascript" : "Langage de programmation web interactif.",
-        "mysql" : "Base de données.",
+	"HomePage": {
+		"title": "Construire des ponts<br>entre idées et écrans.",
+		"subtitle": "Je suis un stagiaire développeur web, actuellement en alternance.",
+		"about": "Aller à la page à propos",
+		"location": "NIVELLES, BELGIQUE",
+		"buttonContact": "Contacter moi",
+		"downloadCV": "Télécharger mon CV",
+		"stackTitle": "Ma Stack",
+		"stackDescription": "Toujours en apprentissage, j'ai opté pour une stack avec laquelle je suis à l'aise, mais je reste ouvert à toutes opportunitées d'apprendre de nouvelles technologies.",
+		"next": "Framework React pour applications web.",
+		"tailwind": "Framework CSS utilitaire, rapide, personnalisable.",
+		"git": "Système de contrôle de version.",
+		"php": "Langage de script serveur dynamique.",
+		"javascript": "Langage de programmation web interactif.",
+		"mysql": "Base de données.",
 
-        "projectsTitle" : "Mes projets",
-        "projectsDescription" : "Voici les projets que j'ai réalisé au cours de mon parcours",
+		"projectsTitle": "Mes projets",
+		"projectsDescription": "Voici les projets que j'ai réalisé au cours de mon parcours",
+		"projectsVisit": "Visiter",
+		"projectsDescriptionStoryTeller": "Plateforme collaborative de création littéraire basée sur le concept du \"cadavre exquis\". Cette application permet aux utilisateurs de participer à l'écriture d'histoires collectives, développée dans le cadre d'un projet académique de fin d'études.",
+		"projectsDescriptionDreams": "Application Web pour suivre ses lectures et les noter, avec l'utilisation de l'API Google Books.",
+		"projectsDescriptionAdopteUnCube": "Site vitrine conçu et développé pour une communauté de joueurs, principalement axée sur Minecraft. J'ai pris en charge l'intégralité du design et de la mise en œuvre technique.",
 
-        "scrollDown" : "Faites défiler vers le bas"
-    }
+		"scrollDown": "Faites défiler vers le bas"
+	}
 }
