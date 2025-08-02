@@ -30,8 +30,12 @@ export default function FluidSimulation() {
 		const sim = new SPHSimulation();
 		sim.canvas = canvas; // Passer le canvas à la simulation
 
-		// Initialiser la simulation après avoir défini le canvas
-		sim.instantiateParticles();
+		// Détecter si on est sur mobile
+		const isMobile = window.innerWidth < 640;
+		const particleCount = isMobile ? 1500 : 1500;
+
+		// Initialiser la simulation avec moins de particules sur mobile
+		sim.instantiateParticles(particleCount);
 		sim.fluidHashGrid.initialize(sim.particles);
 
 		setSimulation(sim);

@@ -23,18 +23,18 @@ export default function HomePage() {
 	return (
 		<div>
 			<Navbar></Navbar>
-			<section className="Home h-screen w-screen flex justify-center items-center">
+			<section className="Home h-screen w-screen flex justify-center">
 				<FluidSimulation></FluidSimulation>
-				<div className="flex-col text-center" ref={containerRef}>
+				<div className="flex-col text-center pt-50" ref={containerRef}>
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
 					<div className="flex flex-col items-center z-10 ">
 						<RepellingText
 							text={t.raw('title1')}
-							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
+							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
 						/>
 						<RepellingText
 							text={t.raw('title2')}
-							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
+							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
 							wordClassName="text-ownAccent"
 						/>
 						{/* <h1
@@ -67,7 +67,7 @@ export default function HomePage() {
 					</div>
 				</div>
 			</section>
-			<section className="h-screen w-screen px-40 py-20 space-y-15">
+			<section className="h-auto min-h-screen w-full px-4 py-8 space-y-8 sm:px-10 sm:py-16 md:px-20 md:py-20 lg:px-40 lg:py-20 lg:space-y-15">
 				<Stack></Stack>
 				<Projects></Projects>
 			</section>

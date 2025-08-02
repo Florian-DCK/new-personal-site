@@ -34,18 +34,15 @@ export default function Contact() {
 	}
 
 	return (
-		<article className="pt-20 pb-60 px-40 flex justify-between" id="contact">
-			<div>
+		<article className="pt-10 pb-20 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col lg:flex-row justify-between gap-10" id="contact">
+			<div className="w-full lg:w-1/2">
 				<RepellingText
 					text={t.raw('title')}
 					className="font-main font-bold text-4xl w-fit sliding-underline"
 					repellingDistance={100}
 					spaceBetweenWords={0}
 				/>
-				{/* <h1 className="font-main font-bold text-4xl sliding-underline w-fit">
-					{t('title')}
-				</h1> */}
-				<p className="font-main text-stone-200/70 w-1/2 mb-5">
+				<p className="font-main text-stone-200/70 w-full lg:w-1/2 mb-5">
 					{t('description')}
 				</p>
 				<ul>
@@ -80,7 +77,7 @@ export default function Contact() {
 			</div>
 			<form
 				action=""
-				className="[&_*]:not-[input]:not-[button]:not-[div]:not-[textarea]:text-2xl [&_*]:font-bold items-center max-w-1/2"
+				className="[&_*]:not-[input]:not-[button]:not-[div]:not-[textarea]:text-2xl [&_*]:font-bold items-center w-full max-w-lg"
 				onSubmit={handleSubmit}>
 				<span>
 					{t('formHello')}

@@ -42,7 +42,7 @@ export default class SPHSimulation {
 		this.mouseForceStrength = 400;
 
 		this.isFirstFrame = true;
-		
+
 		this.fluidHashGrid = new FluidHashGrid(this.INTERACTION_RADIUS);
 
 		this.dt2 = 0;
@@ -52,7 +52,7 @@ export default class SPHSimulation {
 		this.mousePosition = null;
 		this.mouseVelocity = new Vector2(0, 0);
 		this.mouseInCanvas = false;
-		
+
 		this.particleEmitters = [];
 		this.frameCounter = 0;
 	}
@@ -70,44 +70,58 @@ export default class SPHSimulation {
 		return emitter;
 	}
 
-	instantiateParticles() {
-		const canvasWidth = this.canvas.width ;
+	instantiateParticles(count) {
+		if (typeof count === 'number') {
+			this.AMOUNT_PARTICLES = count;
+		}
+		const canvasWidth = this.canvas.width;
 		const canvasHeight = this.canvas.height;
 
-		
 		const margin = this.INTERACTION_RADIUS;
 		const effectiveWidth = canvasWidth - 2 * margin;
 		const effectiveHeight = canvasHeight - 2 * margin;
 
-		const particlesPerRow = Math.ceil(Math.sqrt(this.AMOUNT_PARTICLES * effectiveWidth / effectiveHeight));
-		const particlesPerColumn = Math.ceil(this.AMOUNT_PARTICLES / particlesPerRow);
-		
+		const particlesPerRow = Math.ceil(
+			Math.sqrt((this.AMOUNT_PARTICLES * effectiveWidth) / effectiveHeight)
+		);
+		const particlesPerColumn = Math.ceil(
+			this.AMOUNT_PARTICLES / particlesPerRow
+		);
+
 		const spacingX = effectiveWidth / (particlesPerRow - 1 || 1);
 		const spacingY = effectiveHeight / (particlesPerColumn - 1 || 1);
 
-		let count = 0;
+		let createdCount = 0;
 
-		for (let y = 0; y < particlesPerColumn && count < this.AMOUNT_PARTICLES; y++) {
-			for (let x = 0; x < particlesPerRow && count < this.AMOUNT_PARTICLES; x++) {
+		for (
+			let y = 0;
+			y < particlesPerColumn && createdCount < this.AMOUNT_PARTICLES;
+			y++
+		) {
+			for (
+				let x = 0;
+				x < particlesPerRow && createdCount < this.AMOUNT_PARTICLES;
+				x++
+			) {
 				const posX = margin + x * spacingX;
 				const posY = margin + y * spacingY;
-				
+
 				let position = new Vector2(posX, posY);
 				let particle = new Particle(position);
-				
+
 				// Ajouter une petite variation aléatoire pour éviter l'alignement parfait (optionnel)
 				const jitter = 3;
 				particle.position.x += (Math.random() - 0.5) * jitter;
 				particle.position.y += (Math.random() - 0.5) * jitter;
-				
+
 				// Vitesse initiale nulle ou très faible
 				particle.velocity = Scale(
 					new Vector2(-0.5 + Math.random(), -0.5 + Math.random()),
 					5 // Vitesse initiale très réduite
 				);
-				
+
 				this.particles.push(particle);
-				count++;
+				createdCount++;
 			}
 		}
 	}
@@ -122,7 +136,6 @@ export default class SPHSimulation {
 	}
 
 	update(dt) {
-
 		this.applyMouseInteraction(dt);
 
 		this.predictPosition(dt);
@@ -210,7 +223,7 @@ export default class SPHSimulation {
 				}
 			}
 
-			let pressure = this.K ;
+			let pressure = this.K;
 			let pressureNear = this.K_NEAR * densityNear;
 			let particleADisplacement = Vector2.Zero();
 
@@ -238,14 +251,9 @@ export default class SPHSimulation {
 
 	predictPosition(dt) {
 		for (let particle of this.particles) {
-
-				particle.prevPosition = particle.position.Cpy();
-				let positionDelta = Scale(
-					particle.velocity,
-					dt * this.VELOCITY_DAMPING
-				);
-				particle.position.AddInPlace(positionDelta);
-			
+			particle.prevPosition = particle.position.Cpy();
+			let positionDelta = Scale(particle.velocity, dt * this.VELOCITY_DAMPING);
+			particle.position.AddInPlace(positionDelta);
 		}
 	}
 

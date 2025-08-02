@@ -11,7 +11,7 @@ import RepellingText from './repellingText';
 export default function Projects() {
 	const t = useTranslations('HomePage');
 	return (
-		<main className="relative h-fit max-h-80">
+		<main className="relative h-fit">
 			<div>
 				<RepellingText
 					text={t.raw('projectsTitle')}
@@ -22,16 +22,16 @@ export default function Projects() {
 				{/* <h1 className="font-main font-bold text-4xl w-fit sliding-underline">
 					{t('projectsTitle')}
 				</h1> */}
-				<p className="font-main text-stone-200/70 w-1/2 mb-10">
+				<p className="font-main text-stone-200/70 w-full lg:w-1/2 mb-10">
 					{t('projectsDescription')}
 				</p>
 				<div className="relative ">
 					<div className="absolute top-1/2 -left-0.5 -translate-y-1/2 h-[calc(100%+1rem)] border border-stone-200/20 z-50"></div>
 					<ScrollArea
-						className="dark w-full flex-nowrap transition-all "
+						className="dark w-full flex-nowrap transition-all px-2 sm:px-0"
 						orientation="horizontal">
-						<div className="flex space-x-10 group">
-							<Card className="ms-3 dark p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
+						<div className="flex space-x-4 sm:space-x-10 group">
+							<Card className="ms-0 sm:ms-3 dark p-3 w-full sm:w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										The StoryTeller
@@ -45,7 +45,7 @@ export default function Projects() {
 										{t('projectsVisit')}
 									</Link> */}
 								</CardHeader>
-								<CardContent className="ps-2 pe-0 flex space-x-2">
+								<CardContent className="ps-2 pe-0 lg:flex space-x-2 ">
 									<p className="text-stone-200/70 font-main">
 										{t('projectsDescriptionStoryTeller')}
 									</p>
@@ -75,7 +75,7 @@ export default function Projects() {
 								</div>
 							</Card>
 
-							<Card className="dark p-3 w-162 h-full glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
+							<Card className="dark p-3 w-full sm:w-162 h-full glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										Dreams
@@ -89,7 +89,7 @@ export default function Projects() {
 										{t('projectsVisit')}
 									</Link> */}
 								</CardHeader>
-								<CardContent className="ps-2 pe-0 flex space-x-2">
+								<CardContent className="ps-2 pe-0 lg:flex space-x-2">
 									<p className="text-stone-200/70 font-main">
 										{t('projectsDescriptionDreams')}
 									</p>
@@ -118,7 +118,7 @@ export default function Projects() {
 									</BadgeTilt>
 								</div>
 							</Card>
-							<Card className="dark me-3 p-3 w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
+							<Card className="dark me-0 sm:me-3 p-3 w-full sm:w-162 h-fit glass border-stone-200/20 hover:border-white/70 transition-all group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100 hover:!scale-100">
 								<CardHeader className="px-2 flex-row justify-between">
 									<CardTitle className="font-main font-bold text-lg">
 										Adopte un Cube
@@ -132,7 +132,7 @@ export default function Projects() {
 										Visiter
 									</Link>
 								</CardHeader>
-								<CardContent className="ps-2 pe-0 flex space-x-2">
+								<CardContent className="ps-2 pe-0 lg:flex space-x-2">
 									<p className="text-stone-200/70 font-main">
 										{t('projectsDescriptionAdopteUnCube')}
 									</p>

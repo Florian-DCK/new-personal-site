@@ -29,11 +29,11 @@ export default function Stack() {
 				{/* <h1 className="font-main font-bold text-4xl w-fit sliding-underline">
 					{t('stackTitle')}
 				</h1> */}
-				<p className="font-main text-stone-200/70 w-1/2 mb-10">
+				<p className="font-main text-stone-200/70 lg:w-1/2 mb-10">
 					{t('stackDescription')}
 				</p>
 			</div>
-			<div className="grid grid-cols-3 gap-3 w-fit group">
+			<div className="grid grid-cols-1 mx-auto lg:grid-cols-3 gap-3 w-fit group">
 				<Card className=" cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-white/70 transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-white/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12 shrink-0">
