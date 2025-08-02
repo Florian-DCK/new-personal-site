@@ -1,6 +1,7 @@
 {
 	"HomePage": {
-		"title": "Construire des {bridge}<br>entre {ideas} et {screens}.",
+		"title1": "Construire des ponts",
+		"title2": "entre idées et écrans.",
 		"titleBridge": "ponts",
 		"titleIdeas": "idées",
 		"titleScreens": "écrans",
@@ -26,5 +27,19 @@
 		"projectsDescriptionAdopteUnCube": "Site vitrine conçu et développé pour une communauté de joueurs, principalement axée sur Minecraft. J'ai pris en charge l'intégralité du design et de la mise en œuvre technique.",
 
 		"scrollDown": "Faites défiler vers le bas"
+	},
+	"Contact": {
+		"title": "Contactez-moi",
+		"description": "Si vous avez des questions, une offre, des retours ou si vous voulez simplement dire bonjour, n'hésitez pas à me contacter !",
+		"formHello": "Bonjour,",
+		"formName": "Mon nom est",
+		"formNamePlaceholder": "Votre nom",
+		"formEmail": "et mon email est",
+		"formEmailPlaceholder": "Votre email",
+		"formSubject": "J'ai une",
+		"formSubjectPlaceholder": "Question, Offre etc",
+		"formMessage": "J'aimerais ajouter :",
+		"formMessagePlaceholder": "Votre message",
+		"formSubmit": "Envoyer"
 	}
 }

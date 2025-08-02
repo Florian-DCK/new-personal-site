@@ -4,51 +4,42 @@ import { useTranslations } from 'next-intl';
 import { buttonVariants } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 import { createIcons, icons } from 'lucide';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Navbar from '@/components/navbar';
 import Stack from '@/components/stack';
 import Projects from '@/components/projects';
 import Contact from '@/components/contact';
+import RepellingText from '@/components/repellingText';
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
+	const containerRef = useRef<HTMLDivElement>(null);
+
 	useEffect(() => {
 		createIcons({ icons });
 	}, []);
-
-	const animatedTitle = t
-		.raw('title')
-		.replace(
-			'{bridge}',
-			`<span class="text-ownAccent hover-bridge inline-block transition-all duration-300">${t(
-				'titleBridge'
-			)}</span>`
-		)
-		.replace(
-			'{ideas}',
-			`<span class="text-white hover-ideas inline-block transition-all duration-300">${t(
-				'titleIdeas'
-			)}</span>`
-		)
-		.replace(
-			'{screens}',
-			`<span class="text-white hover-screens inline-block transition-all duration-300">${t(
-				'titleScreens'
-			)}</span>`
-		);
 
 	return (
 		<div>
 			<Navbar></Navbar>
 			<section className="Home h-screen w-screen flex justify-center items-center">
 				<FluidSimulation></FluidSimulation>
-				<div className="flex-col text-center">
+				<div className="flex-col text-center" ref={containerRef}>
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
-					<div>
-						<h1
+					<div className="flex flex-col items-center z-10 ">
+						<RepellingText
+							text={t.raw('title1')}
 							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
-							dangerouslySetInnerHTML={{ __html: animatedTitle }}
 						/>
+						<RepellingText
+							text={t.raw('title2')}
+							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
+							wordClassName="text-ownAccent"
+						/>
+						{/* <h1
+							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
+							dangerouslySetInnerHTML={{ __html: t.raw('title') }}
+						/> */}
 					</div>
 					<p className="font-main text-stone-200/70">{t('subtitle')}</p>
 					<div className="flex items-center justify-center mt-5 space-x-5">

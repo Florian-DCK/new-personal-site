@@ -1,9 +1,12 @@
 import { createIcons, icons } from 'lucide';
+import { useTranslations } from 'next-intl';
 
 export default function Contact() {
-	async function handleSubmit(event) {
+	const t = useTranslations('Contact');
+
+	async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
 		event.preventDefault();
-		const formData = new FormData(event.target);
+		const formData = new FormData(event.target as HTMLFormElement);
 		const data = Object.fromEntries(formData.entries());
 		const response = await fetch('/api/contact', {
 			method: 'POST',
@@ -19,20 +22,24 @@ export default function Contact() {
 		}
 	}
 
-	async function handleInput(event, minWidth = 100, spacePerChar = 8) {
-		event.target.style.width =
-			Math.max(minWidth, event.target.value.length * spacePerChar + 5) + 'px';
+	async function handleInput(
+		event: React.FormEvent<HTMLInputElement>,
+		minWidth = 100,
+		spacePerChar = 8
+	) {
+		const target = event.target as HTMLInputElement;
+		target.style.width =
+			Math.max(minWidth, target.value.length * spacePerChar + 5) + 'px';
 	}
 
 	return (
 		<article className="pt-20 pb-60 px-40 flex justify-center" id="contact">
 			<div>
 				<h1 className="font-main font-bold text-4xl sliding-underline w-fit">
-					Contact Me
+					{t('title')}
 				</h1>
 				<p className="font-main text-stone-200/70 w-1/2 mb-5">
-					If you have any questions, offer, feedback or just want to say hello,
-					feel free to reach out!
+					{t('description')}
 				</p>
 				<ul>
 					<li className="flex items-center mb-2">
@@ -68,54 +75,59 @@ export default function Contact() {
 				action=""
 				className="[&_*]:not-[input]:not-[button]:not-[div]:not-[textarea]:text-2xl [&_*]:font-bold items-center max-w-1/2"
 				onSubmit={handleSubmit}>
-				<span>My name is </span>
+				<span>
+					{t('formHello')}
+					<br />
+				</span>
+				<span>{t('formName')} </span>
 				<input
 					type="text"
 					name="name"
 					className="contact-input w-[100px]"
-					placeholder="Your Name"
+					placeholder={t('formNamePlaceholder')}
 					onInput={handleInput}
 					style={{ minWidth: '100px' }}
 				/>
-				<span className="ms-2">and my email is </span>
+				<span className="ms-2">{t('formEmail')} </span>
 				<input
 					type="email"
 					name="email"
-					className="contact-input w-[80px]"
-					placeholder="Your Email"
-					onInput={(event) => handleInput(event, 80, 9)}
-					style={{ minWidth: '80px' }}
+					className="contact-input w-[90px]"
+					placeholder={t('formEmailPlaceholder')}
+					onInput={(event) => handleInput(event, 90, 9)}
+					style={{ minWidth: '90px' }}
 				/>
 				<span className="ms-2">
-					,<br /> I have a{' '}
+					,<br /> {t('formSubject')}{' '}
 				</span>
 				<input
 					type="text"
 					name="subject"
 					className="contact-input w-[150px]"
-					placeholder="Question, Offer etc"
+					placeholder={t('formSubjectPlaceholder')}
 					onInput={(event) => handleInput(event, 100, 8)}
 					style={{ minWidth: '100px' }}
 				/>
 				<span className="ms-2">
-					. I would like to add :<br />
+					. {t('formMessage')}
+					<br />
 				</span>
 				<div className="glass relative mt-2">
 					<textarea
 						name="message"
 						id="message"
 						className="contact-textarea px-2 mt-2 w-full overflow-hidden focus:outline-none text-md pb-12"
-						placeholder="Your Message"
+						placeholder={t('formMessagePlaceholder')}
 						onInput={(event) => {
-							event.target.style.height = 'auto';
-							event.target.style.height =
-								Math.max(80, event.target.scrollHeight) + 'px';
+							const target = event.target as HTMLTextAreaElement;
+							target.style.height = 'auto';
+							target.style.height = Math.max(80, target.scrollHeight) + 'px';
 						}}
 						style={{ minHeight: '80px', resize: 'none' }}></textarea>
 					<button
 						className={`flex absolute bottom-2 right-2 px-2 py-1 cursor-pointer rounded bg-transparent transition-all text-white font-main hover:text-black hover:bg-white z-10 text-md`}
 						type="submit">
-						Send
+						{t('formSubmit')}
 						<i data-lucide="send" className="ms-2 size-5"></i>
 					</button>
 				</div>
