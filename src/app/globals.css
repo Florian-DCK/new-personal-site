@@ -122,6 +122,7 @@ body {
 	background-position-y: 100%;
 	background-repeat: no-repeat;
 	transition: background-size 0.2s ease-in-out;
+	border-bottom: 0.1em solid var(--ownAccent);
 }
 
 .sliding-underline:hover,
