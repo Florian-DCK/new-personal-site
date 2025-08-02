@@ -23,9 +23,9 @@ export default function HomePage() {
 	return (
 		<div>
 			<Navbar></Navbar>
-			<section className="Home h-screen w-screen flex justify-center">
+			<section className="Home h-screen w-screen flex lg:items-center justify-center">
 				<FluidSimulation></FluidSimulation>
-				<div className="flex-col text-center pt-50" ref={containerRef}>
+				<div className="flex-col text-center pt-50 lg:pt-0" ref={containerRef}>
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
 					<div className="flex flex-col items-center z-10 ">
 						<RepellingText
