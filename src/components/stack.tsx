@@ -19,7 +19,9 @@ export default function Stack() {
 	return (
 		<main className=" w-fit">
 			<div>
-				<h1 className="font-main font-bold text-4xl">{t('stackTitle')}</h1>
+				<h1 className="font-main font-bold text-4xl w-fit sliding-underline">
+					{t('stackTitle')}
+				</h1>
 				<p className="font-main text-stone-200/70 w-1/2 mb-10">
 					{t('stackDescription')}
 				</p>

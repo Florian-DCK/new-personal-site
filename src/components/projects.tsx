@@ -12,7 +12,9 @@ export default function Projects() {
 	return (
 		<main className="relative h-fit max-h-80">
 			<div>
-				<h1 className="font-main font-bold text-4xl">{t('projectsTitle')}</h1>
+				<h1 className="font-main font-bold text-4xl w-fit sliding-underline">
+					{t('projectsTitle')}
+				</h1>
 				<p className="font-main text-stone-200/70 w-1/2 mb-10">
 					{t('projectsDescription')}
 				</p>

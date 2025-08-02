@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import Navbar from '@/components/navbar';
 import Stack from '@/components/stack';
 import Projects from '@/components/projects';
+import Contact from '@/components/contact';
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
@@ -78,6 +79,7 @@ export default function HomePage() {
 				<Stack></Stack>
 				<Projects></Projects>
 			</section>
+			<Contact />
 		</div>
 	);
 }
