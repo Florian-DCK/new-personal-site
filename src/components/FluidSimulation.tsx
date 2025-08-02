@@ -17,18 +17,10 @@ export default function FluidSimulation() {
 		if (!ctx) return;
 
 		function handleResize() {
+			if (!canvas) return;
 			canvas.width = canvas.clientWidth;
 			canvas.height = canvas.clientHeight;
 			particleImageData = null;
-
-			if (simulation) {
-				// Par exemple, 1 particule pour 1000 pixels²
-				const area = canvas.width * canvas.height;
-				const maxParticles = Math.max(10, Math.floor(area / 1000));
-				simulation.maxParticles = maxParticles;
-				simulation.instantiateParticles();
-				simulation.fluidHashGrid.initialize(simulation.particles);
-			}
 		}
 
 		window.addEventListener('resize', handleResize);

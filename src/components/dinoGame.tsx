@@ -23,6 +23,7 @@ export default function DinoGame() {
 		if (!ctx) return;
 
 		function handleResize() {
+			if (!canvas) return;
 			canvas.width = window.innerWidth;
 			canvas.height = 200;
 			restartGame();
