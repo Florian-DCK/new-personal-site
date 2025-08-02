@@ -36,14 +36,14 @@ export default function Projects() {
 									<CardTitle className="font-main font-bold text-lg">
 										The StoryTeller
 									</CardTitle>
-									<Link
+									{/* <Link
 										className={`${buttonVariants({
 											variant: 'outline',
 										})} bg-transparent border border-stone-200/30 transition-all text-white font-main hover:text-black hover:bg-white`}
 										href={'https://www.adopteuncube.com/'}
 										target="_blank">
 										{t('projectsVisit')}
-									</Link>
+									</Link> */}
 								</CardHeader>
 								<CardContent className="ps-2 pe-0 flex space-x-2">
 									<p className="text-stone-200/70 font-main">
@@ -80,14 +80,14 @@ export default function Projects() {
 									<CardTitle className="font-main font-bold text-lg">
 										Dreams
 									</CardTitle>
-									<Link
+									{/* <Link
 										className={`${buttonVariants({
 											variant: 'outline',
 										})} bg-transparent border border-stone-200/30 transition-all text-white font-main hover:text-black hover:bg-white`}
 										href={'https://www.adopteuncube.com/'}
 										target="_blank">
 										{t('projectsVisit')}
-									</Link>
+									</Link> */}
 								</CardHeader>
 								<CardContent className="ps-2 pe-0 flex space-x-2">
 									<p className="text-stone-200/70 font-main">
