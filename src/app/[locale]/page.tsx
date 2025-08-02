@@ -10,6 +10,7 @@ import Stack from '@/components/stack';
 import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import RepellingText from '@/components/repellingText';
+import DinoGame from '@/components/dinoGame';
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
@@ -71,6 +72,7 @@ export default function HomePage() {
 				<Projects></Projects>
 			</section>
 			<Contact />
+			<DinoGame />
 		</div>
 	);
 }
