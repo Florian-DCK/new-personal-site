@@ -33,7 +33,7 @@ export default function Stack() {
 					{t('stackDescription')}
 				</p>
 			</div>
-			<div className="grid grid-cols-1 mx-auto lg:grid-cols-3 gap-3 w-fit group">
+			<div className="grid grid-cols-1 mx-auto lg:mx-0 lg:grid-cols-3 gap-3 w-fit group">
 				<Card className=" cursor-pointer dark p-3 flex flex-row w-80 h-fit glass border-stone-200/20 hover:border-white/70 transition-all hover:scale-105 group-hover:opacity-50 group-hover:scale-95 hover:!opacity-100">
 					<div className="bg-white/40 w-fit h-fit p-3 rounded-2xl aspect-square">
 						<svg viewBox="0 0 128 128" className="size-12 shrink-0">

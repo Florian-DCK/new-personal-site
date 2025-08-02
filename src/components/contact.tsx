@@ -34,7 +34,9 @@ export default function Contact() {
 	}
 
 	return (
-		<article className="pt-10 pb-20 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col lg:flex-row justify-between gap-10" id="contact">
+		<article
+			className="pt-10 pb-20 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col lg:flex-row justify-between gap-10"
+			id="contact">
 			<div className="w-full lg:w-1/2">
 				<RepellingText
 					text={t.raw('title')}
