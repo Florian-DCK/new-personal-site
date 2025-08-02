@@ -9,6 +9,7 @@ import {
 import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
 import { createIcons, icons } from 'lucide';
+import RepellingText from './repellingText';
 
 export default function Stack() {
 	const t = useTranslations('HomePage');
@@ -19,9 +20,15 @@ export default function Stack() {
 	return (
 		<main className=" w-fit">
 			<div>
-				<h1 className="font-main font-bold text-4xl w-fit sliding-underline">
+				<RepellingText
+					text={t.raw('stackTitle')}
+					className="font-main font-bold text-4xl w-fit sliding-underline"
+					repellingDistance={100}
+					spaceBetweenWords={0}
+				/>
+				{/* <h1 className="font-main font-bold text-4xl w-fit sliding-underline">
 					{t('stackTitle')}
-				</h1>
+				</h1> */}
 				<p className="font-main text-stone-200/70 w-1/2 mb-10">
 					{t('stackDescription')}
 				</p>

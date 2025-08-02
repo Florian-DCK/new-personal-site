@@ -1,5 +1,6 @@
 import { createIcons, icons } from 'lucide';
 import { useTranslations } from 'next-intl';
+import RepellingText from './repellingText';
 
 export default function Contact() {
 	const t = useTranslations('Contact');
@@ -35,9 +36,15 @@ export default function Contact() {
 	return (
 		<article className="pt-20 pb-60 px-40 flex justify-center" id="contact">
 			<div>
-				<h1 className="font-main font-bold text-4xl sliding-underline w-fit">
+				<RepellingText
+					text={t.raw('title')}
+					className="font-main font-bold text-4xl w-fit sliding-underline"
+					repellingDistance={100}
+					spaceBetweenWords={0}
+				/>
+				{/* <h1 className="font-main font-bold text-4xl sliding-underline w-fit">
 					{t('title')}
-				</h1>
+				</h1> */}
 				<p className="font-main text-stone-200/70 w-1/2 mb-5">
 					{t('description')}
 				</p>

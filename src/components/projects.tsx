@@ -6,15 +6,22 @@ import { Badge } from './ui/badge';
 import Link from 'next/link';
 import { buttonVariants } from './ui/button';
 import { useRef } from 'react';
+import RepellingText from './repellingText';
 
 export default function Projects() {
 	const t = useTranslations('HomePage');
 	return (
 		<main className="relative h-fit max-h-80">
 			<div>
-				<h1 className="font-main font-bold text-4xl w-fit sliding-underline">
+				<RepellingText
+					text={t.raw('projectsTitle')}
+					className="font-main font-bold text-4xl w-fit sliding-underline"
+					repellingDistance={100}
+					spaceBetweenWords={0}
+				/>
+				{/* <h1 className="font-main font-bold text-4xl w-fit sliding-underline">
 					{t('projectsTitle')}
-				</h1>
+				</h1> */}
 				<p className="font-main text-stone-200/70 w-1/2 mb-10">
 					{t('projectsDescription')}
 				</p>

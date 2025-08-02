@@ -5,6 +5,8 @@ interface RepellingTextProps {
 	className?: string;
 	wordClassName?: string;
 	color?: string;
+	repellingDistance?: number; // Optional prop to control repelling distance
+	spaceBetweenWords?: number; // Optional prop to control space between words
 }
 
 const RepellingText = ({
@@ -12,6 +14,8 @@ const RepellingText = ({
 	className,
 	wordClassName,
 	color = 'inherit',
+	repellingDistance = 300,
+	spaceBetweenWords = 6,
 }: RepellingTextProps) => {
 	const containerRef = useRef<HTMLParagraphElement>(null);
 
@@ -27,7 +31,7 @@ const RepellingText = ({
 				const dx = e.clientX - centerX;
 				const dy = e.clientY - centerY;
 				const distance = Math.sqrt(dx * dx + dy * dy);
-				const maxDist = 300;
+				const maxDist = repellingDistance;
 
 				if (distance < maxDist) {
 					const angle = Math.atan2(dy, dx);
@@ -57,7 +61,11 @@ const RepellingText = ({
 		<p
 			ref={containerRef}
 			className={`space-x-4 ${className}`}
-			style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+			style={{
+				display: 'flex',
+				flexWrap: 'wrap',
+				gap: `${spaceBetweenWords}px`,
+			}}>
 			{text.split(' ').map((word, index) => (
 				<span
 					key={index}
