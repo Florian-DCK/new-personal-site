@@ -31,11 +31,11 @@ export default function HomePage() {
 					<div className="flex flex-col items-center z-10">
 						<RepellingText
 							text={t.raw('title1')}
-							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
+							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group justify-center"
 						/>
 						<RepellingText
 							text={t.raw('title2')}
-							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
+							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group justify-center"
 							wordClassName="text-ownAccent"
 						/>
 						<Contact
