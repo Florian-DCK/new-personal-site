@@ -11,6 +11,7 @@ import Projects from '@/components/projects';
 import Contact from '@/components/contact';
 import RepellingText from '@/components/repellingText';
 import DinoGame from '@/components/dinoGame';
+import { BackgroundBeams } from '@/components/ui/background-beams';
 
 export default function HomePage() {
 	const t = useTranslations('HomePage');
@@ -73,6 +74,7 @@ export default function HomePage() {
 			</section>
 			<Contact />
 			<DinoGame />
+			<BackgroundBeams className="opacity-20" />
 		</div>
 	);
 }
