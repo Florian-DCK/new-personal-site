@@ -28,7 +28,7 @@ export default function HomePage() {
 				<FluidSimulation></FluidSimulation>
 				<div className="flex-col text-center pt-50 lg:pt-0" ref={containerRef}>
 					<h3 className="text-center font-main mb-3 z-10">{t('location')}</h3>
-					<div className="flex flex-col items-center z-10 ">
+					<div className="flex flex-col items-center z-10">
 						<RepellingText
 							text={t.raw('title1')}
 							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
@@ -38,10 +38,10 @@ export default function HomePage() {
 							className="font-main font-bold text-3xl sm:text-5xl lg:text-7xl text-center first-line:text-ownAccent z-10 group"
 							wordClassName="text-ownAccent"
 						/>
-						{/* <h1
-							className="font-main font-bold text-7xl text-center first-line:text-ownAccent z-10 group"
-							dangerouslySetInnerHTML={{ __html: t.raw('title') }}
-						/> */}
+						<Contact
+							className="hidden md:block absolute bottom-5 right-10 z-10"
+							horizontal={true}
+						/>
 					</div>
 					<p className="font-main text-stone-200/70">{t('subtitle')}</p>
 					<div className="flex items-center justify-center mt-5 space-x-5">
@@ -72,7 +72,7 @@ export default function HomePage() {
 				<Stack></Stack>
 				<Projects></Projects>
 			</section>
-			<Contact />
+			<Contact className="pt-10 pb-40 mx-auto" anchor="contact" />
 			<DinoGame />
 			<BackgroundBeams className="opacity-20" />
 		</div>

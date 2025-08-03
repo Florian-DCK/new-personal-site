@@ -30,7 +30,7 @@
 	},
 	"Contact": {
 		"title": "Contactez - moi",
-		"description": "Si vous avez des questions, une offre, des retours ou si vous voulez simplement dire bonjour, n'hésitez pas à me contacter !",
+		"description": "Si vous avez des questions, <lbr/>une offre, des retours <lbr/>ou si vous voulez simplement dire bonjour, <lbr/>n'hésitez pas à me contacter !",
 		"formHello": "Bonjour,",
 		"formName": "Mon nom est",
 		"formNamePlaceholder": "Votre nom",
