@@ -5,7 +5,7 @@ import { routing } from '@/i18n/routing';
 import '@/app/globals.css';
 import { Metadata } from 'next';
 import { Lexend , Raleway} from 'next/font/google';
-
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
 	title: "DONCKERS Florian",
@@ -47,6 +47,7 @@ export default async function LocaleLayout({
 			<body className='bg-amber-500'>
 				<NextIntlClientProvider messages={messages}>
 					{children}
+					<Analytics />
 				</NextIntlClientProvider>
 			</body>
 		</html>
