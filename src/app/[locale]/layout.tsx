@@ -6,6 +6,7 @@ import '@/app/globals.css';
 import { Metadata } from 'next';
 import { Lexend , Raleway} from 'next/font/google';
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsight } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
 	title: "DONCKERS Florian",
@@ -48,6 +49,7 @@ export default async function LocaleLayout({
 				<NextIntlClientProvider messages={messages}>
 					{children}
 					<Analytics />
+					<SpeedInsight />
 				</NextIntlClientProvider>
 			</body>
 		</html>
