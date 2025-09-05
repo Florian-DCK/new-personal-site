@@ -1,0 +1,16 @@
+{
+  "name": "The Storyteller",
+  "technologies": ["PHP", "Tailwind CSS", "MySql"],
+  "githubLink": "https://github.com/Florian-DCK/StoryTeller",
+  "date": "06/06/2025",
+  "objective": "storytellerObjective",
+  "responsabilities": "storytellerResponsabilities",
+  "obstacles": "storytellerObstacles",
+  "images": [
+    "acceuil.png",
+    "connexion.png",
+    "diagram.png",
+    "newStory.png",
+    "user.png"
+  ]
+}
