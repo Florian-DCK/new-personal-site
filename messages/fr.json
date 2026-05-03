@@ -37,6 +37,241 @@
 
     "scrollDown": "Faites défiler vers le bas"
   },
+  "Portfolio": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "stack": "Stack",
+      "journey": "Parcours",
+      "projects": "Projets",
+      "contact": "Contact",
+      "cv": "CV",
+      "role": "Software · Design · Bruxelles '26",
+      "search": "recherche",
+      "cmdAria": "Ouvrir la palette de commandes (Cmd+K)"
+    },
+    "cmdk": {
+      "title": "Palette de commandes",
+      "placeholder": "Pose une question, tape un mot…",
+      "empty": "Aucun résultat",
+      "navigate": "naviguer",
+      "select": "ouvrir",
+      "close": "fermer"
+    },
+    "issue": {
+      "label": "ISSUE №026",
+      "place": "BRUXELLES, BE"
+    },
+    "hero": {
+      "kicker": "Développeur web · Belgique",
+      "metaVol": "VOL. 03",
+      "metaDate": "26.05.2026",
+      "metaPlace": "BRUXELLES",
+      "title1": "Je construis",
+      "title2": "des expériences",
+      "title3": "qui réagissent.",
+      "title3Word": "réagissent",
+      "sub": "Florian Donckers — dev web créatif chez Hilarious Agency. Je conçois des jeux-concours, des micro-sites et des prototypes interactifs où chaque pixel a une raison d'être là.",
+      "cta1": "Voir mes projets",
+      "cta2": "Télécharger CV",
+      "status": "Disponible pour collaborer",
+      "photoCaption": "florian, 2026",
+      "hint": "déplace-moi !",
+      "postit1Body": "actuellement\nchez Hilarious",
+      "postit1Boldword": "Hilarious",
+      "postit1Foot": "bruxelles · 2026",
+      "postit2Body": "écris-moi !",
+      "postit2Email": "fdonckersf@gmail.com",
+      "marquee": [
+        "DÉVELOPPEUR WEB",
+        "CODE CRÉATIF",
+        "JS · TS · NEXT · TAILWIND",
+        "DISPONIBLE POUR COLLABORER",
+        "BASÉ À BRUXELLES"
+      ]
+    },
+    "about": {
+      "title": "À propos",
+      "kicker": "manifeste",
+      "pull": "Je construis des choses qui <em>réagissent</em> — au scroll, aux clics, à qui tient la souris.",
+      "p1": "Je suis dev web depuis 2023, actuellement chez Hilarious Agency à Bruxelles, une agence de marketing créative.",
+      "p2": "Chaque mois, je conçois une nouvelle expérience de gamification — plateformer, runner, puzzle — destinée principalement à Proximus For You, leur programme de fidélisation. C'est un terrain de jeu permanent où je dois apprendre vite, livrer vite, et surtout amuser.",
+      "p3": "Je suis fasciné par l'IA générative et son intégration concrète dans les outils de tous les jours. La curiosité technique, c'est mon moteur.",
+      "factsHint": "déplace-les ↘",
+      "facts": [
+        ["Basé à", "Bruxelles, BE"],
+        ["Agence", "Hilarious Agency"],
+        ["Spécialité", "Sites & jeux interactifs"],
+        ["Obsession", "IA & outils dev"]
+      ]
+    },
+    "stack": {
+      "title": "Ma stack",
+      "kicker": "outils",
+      "mega1": "mon",
+      "mega2": "atelier.",
+      "sub": "Les outils avec lesquels je passe mes journées.",
+      "items": [
+        { "name": "JavaScript", "desc": "Ma zone de confort, le socle de tout." },
+        { "name": "TypeScript", "desc": "Pour les projets qui doivent durer." },
+        { "name": "Next.js", "desc": "Mon framework go-to pour tout projet sérieux." },
+        { "name": "React", "desc": "L'évidence pour les UI réactives." },
+        { "name": "Tailwind", "desc": "CSS qui scale sans douleur." },
+        { "name": "Node.js", "desc": "Le back-end quand je reste en JS." },
+        { "name": "Postgres", "desc": "Données structurées, requêtes propres." },
+        { "name": "Git / GitHub", "desc": "Versionning, CI, et collaboration." },
+        { "name": "IA / LLMs", "desc": "Claude, OpenAI, prompts comme nouveau langage." }
+      ]
+    },
+    "journey": {
+      "title": "Mon parcours",
+      "kicker": "repères",
+      "mega1": "le",
+      "mega2": "récit.",
+      "items": [
+        {
+          "year": "02.2026 →",
+          "role": "Développeur web FullStack",
+          "place": "Hilarious Agency · CDI",
+          "desc": "Conception et développement d'expériences de gamification mensuelles, principalement pour Proximus For You. Sites événementiels, micro-sites de marque, intégration d'outils IA."
+        },
+        {
+          "year": "11.2025 — 02.2026",
+          "role": "Stage Front-end",
+          "place": "Hilarious Agency",
+          "desc": "Stage immersif sur la production des gamifications mensuelles pour Proximus For You et des micro-sites de marque, avant signature du CDI."
+        },
+        {
+          "year": "2024 — 2025",
+          "role": "Alternance Back-end",
+          "place": "Campus E6K · IFAPME",
+          "desc": "Architecture d'API, base de données, intégration de paiement et gestion utilisateurs."
+        },
+        {
+          "year": "2023 — 2024",
+          "role": "Alternance Front-end",
+          "place": "Campus E6K · IFAPME",
+          "desc": "Sites vitrines, e-commerce, animations CSS/JS, responsive et accessibilité."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projets",
+      "kicker": "sélection",
+      "mega1": "derniers",
+      "mega2": "travaux.",
+      "sub": "Sélection de réalisations chez Hilarious Agency.",
+      "placeholder": "Étude de cas",
+      "hint": "tu peux tout réorganiser",
+      "agency": "HILARIOUS · 2025"
+    },
+    "playground": {
+      "title": "Playground",
+      "kicker": "experiments",
+      "mega1": "misc.",
+      "mega2": "experiments",
+      "sub": "Petites expériences. Survole pour activer.",
+      "items": [
+        { "name": "Particle Field", "desc": "Champ de particules réactif à la souris" },
+        { "name": "Type Morph", "desc": "Lettres qui se déforment" },
+        { "name": "Gravity Box", "desc": "Petit moteur physique 2D" },
+        { "name": "Audio React", "desc": "Visualiseur en temps réel" }
+      ]
+    },
+    "contact": {
+      "title": "On parle ?",
+      "kicker": "écrivons-nous",
+      "mega1": "à",
+      "mega2": "bientôt.",
+      "mail": "fdonckersf@gmail.com",
+      "social": "SOCIAL",
+      "location": "LOCATION",
+      "locationValue": "Bruxelles, BE · CET",
+      "status": "STATUS",
+      "marquee": [
+        "FIN DU NUMÉRO",
+        "MERCI POUR LA LECTURE",
+        "À BIENTÔT DANS L'INBOX"
+      ]
+    },
+    "footer": {
+      "made": "Fait à la main, à Bruxelles."
+    }
+  },
+  "Resume": {
+    "vol": "VOL. 03",
+    "city": "BRUXELLES",
+    "doc": "CV / RÉSUMÉ",
+    "issueRef": "№ FD-2026-CV",
+    "roleKicker": "DÉV WEB FULLSTACK",
+    "role": "Développeur web FullStack",
+    "status": "Disponible pour collaborer",
+    "caption": "florian, 2026",
+    "note": "c'est moi !",
+    "quote": "Je construis <accent>des expériences</accent> qui <italic>réagissent</italic> — au scroll, aux clics, à qui tient la souris.",
+    "expTitle": "Expérience",
+    "expKicker": "depuis 2023",
+    "exp": [
+      {
+        "role": "Développeur web FullStack",
+        "place": "Hilarious Agency",
+        "city": "Bruxelles, BE",
+        "type": "CDI",
+        "period": "02.2026 → présent",
+        "desc": "Conception et développement d'expériences de gamification mensuelles, principalement pour Proximus For You. Sites événementiels, micro-sites de marque, intégration d'outils IA."
+      },
+      {
+        "role": "Stage Front-end",
+        "place": "Hilarious Agency",
+        "city": "Bruxelles, BE",
+        "type": "Stage",
+        "period": "11.2025 — 02.2026",
+        "desc": "Stage immersif sur la production des gamifications mensuelles pour Proximus For You et des micro-sites de marque, ayant débouché sur le CDI."
+      }
+    ],
+    "eduTitle": "Formation",
+    "edu": [
+      {
+        "degree": "Développeur web · alternance",
+        "place": "Campus E6K · IFAPME",
+        "period": "2024 — 2026",
+        "desc": "Cursus en alternance de 2 ans avec stage obligatoire — pratique terrain et théorie."
+      },
+      {
+        "degree": "Bachelier · Sciences informatiques",
+        "place": "UCLouvain",
+        "period": "2022 — 2023",
+        "desc": "Bases solides : algorithmique, structures de données, méthodologie technique."
+      }
+    ],
+    "stackTitle": "Stack",
+    "stackKicker": "outils du quotidien",
+    "stackPrimary": ["JavaScript", "TypeScript", "Next.js", "React", "Tailwind"],
+    "stackSecondary": ["Node.js", "Postgres", "Git / GitHub", "IA / LLMs"],
+    "contactTitle": "Contact",
+    "facts": [
+      { "k": "Email", "v": "fdonckersf@gmail.com", "href": "mailto:fdonckersf@gmail.com" },
+      { "k": "Téléphone", "v": "+32 476 41 68 17", "href": "tel:+32476416817" },
+      { "k": "Localisation", "v": "Nivelles, BE · CET" },
+      { "k": "LinkedIn", "v": "florian-donckers", "href": "https://www.linkedin.com/in/florian-donckers-b60a08200/" },
+      { "k": "GitHub", "v": "Florian-DCK", "href": "https://github.com/Florian-DCK" }
+    ],
+    "langTitle": "Langues",
+    "langs": [
+      { "k": "Français", "v": "Langue maternelle" },
+      { "k": "Anglais", "v": "Bon niveau pro" }
+    ],
+    "hlTitle": "Highlights",
+    "hl": [
+      { "k": "Proximus For You", "v": "gamifications mensuelles — plateformer, runner, jeux-concours" },
+      { "k": "Micro-sites événementiels", "v": "campagnes de marque, animations, intégration CMS" },
+      { "k": "Outils IA internes", "v": "intégration LLMs dans les flows de production" }
+    ],
+    "footerL": "FLORIAN DONCKERS · CV 2026",
+    "footerR": "FAIT À LA MAIN À BRUXELLES",
+    "printBtn": "↓ IMPRIMER / PDF",
+    "dateFormat": "dd.MM.yyyy"
+  },
   "Contact": {
     "title": "Contactez - moi",
     "description": "Si vous avez des questions, <lbr/>une offre, des retours <lbr/>ou si vous voulez simplement dire bonjour, <lbr/>n'hésitez pas à me contacter !",
